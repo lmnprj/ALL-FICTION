@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="watcher\**\*.cs" />
+    <Compile Remove="controls\**\*.cs" />
+    <Compile Remove="keymap-compiler\**\*.cs" />
+  </ItemGroup>
+</Project>

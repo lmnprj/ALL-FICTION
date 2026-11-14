@@ -1,0 +1,16 @@
+LIBRARY afmu-keymapmanager
+EXPORTS
+  ?ButtonPress@JoystickEvent@@2W4Type@QEvent@@A=nemu-keymapmanager.?ButtonPress@JoystickEvent@@2W4Type@QEvent@@A DATA
+  ?SetTextForConfigKey@nemukeymapmanager@@YAXPEAUConfigKey@1@@Z=nemu-keymapmanager.?SetTextForConfigKey@nemukeymapmanager@@YAXPEAUConfigKey@1@@Z
+  ?getMacroConfigKeyCode@nemukeymapmanager@@YAHPEAVQEvent@@@Z=nemu-keymapmanager.?getMacroConfigKeyCode@nemukeymapmanager@@YAHPEAVQEvent@@@Z
+  ?V1ToV2Map@grammar@nemukeymapmanager@@YAAEBV?$QHash@VQString@@V1@@@XZ=nemu-keymapmanager.?V1ToV2Map@grammar@nemukeymapmanager@@YAAEBV?$QHash@VQString@@V1@@@XZ
+  ?IgnoredIdentifiers@grammar@nemukeymapmanager@@YAAEBV?$QSet@VQString@@@@XZ=nemu-keymapmanager.?IgnoredIdentifiers@grammar@nemukeymapmanager@@YAAEBV?$QSet@VQString@@@@XZ
+  ?CommandVersion@grammar@nemukeymapmanager@@YAAEBV?$QHash@VQString@@VQVersionNumber@@@@XZ=nemu-keymapmanager.?CommandVersion@grammar@nemukeymapmanager@@YAAEBV?$QHash@VQString@@VQVersionNumber@@@@XZ
+  ?CurrentGrammarVersion@grammar@nemukeymapmanager@@YAAEBVQVersionNumber@@XZ=nemu-keymapmanager.?CurrentGrammarVersion@grammar@nemukeymapmanager@@YAAEBVQVersionNumber@@XZ
+  ?LoadKeymapConfigAndInfo@nemukeymapmanager@@YAPEAVKeymapConfig@1@AEBVQString@@@Z=AF_LoadKeymap
+  ?AxisTriggle@JoystickEvent@@2W4Type@QEvent@@A=nemu-keymapmanager.?AxisTriggle@JoystickEvent@@2W4Type@QEvent@@A DATA
+  ?isConfigHasSpeicalTypeKey@nemukeymapmanager@@YA_NPEAVKeymapConfig@1@AEBVQString@@@Z=nemu-keymapmanager.?isConfigHasSpeicalTypeKey@nemukeymapmanager@@YA_NPEAVKeymapConfig@1@AEBVQString@@@Z
+  ?LoadJoystickConfigAndInfo@nemukeymapmanager@@YAPEAVKeymapConfig@1@AEBVQString@@@Z=nemu-keymapmanager.?LoadJoystickConfigAndInfo@nemukeymapmanager@@YAPEAVKeymapConfig@1@AEBVQString@@@Z
+  ?isConfigKeyMatch@nemukeymapmanager@@YA_NPEAVKeymapConfig@1@PEAUConfigKey@1@1@Z=nemu-keymapmanager.?isConfigKeyMatch@nemukeymapmanager@@YA_NPEAVKeymapConfig@1@PEAUConfigKey@1@1@Z
+  ?ButtonRelease@JoystickEvent@@2W4Type@QEvent@@A=nemu-keymapmanager.?ButtonRelease@JoystickEvent@@2W4Type@QEvent@@A DATA
+  ?CreateConfigKey@nemukeymapmanager@@YA?AUConfigKey@1@VQString@@HH@Z=nemu-keymapmanager.?CreateConfigKey@nemukeymapmanager@@YA?AUConfigKey@1@VQString@@HH@Z
