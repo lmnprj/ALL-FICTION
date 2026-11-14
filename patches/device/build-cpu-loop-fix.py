@@ -1,0 +1,3 @@
+from pathlib import Path
+import hashlib,json,pefile
+r=Path('mumu-analysis/theme-work');target=Path(r'C:\Program Files\Netease\MuMuPlayer\nx_device\15.0\shell\MuMuNxDevice.exe');d=bytearray(target.read_bytes());h=lambda b:hashlib.sha256(b).hexdigest();before=h(d);assert before=='08064a8a8f8b14f2d2bb92a8d914b6958fd319e2deaa8bed8813dfd596a7f8b4';(r/'MuMuNxDevice.before-cpu-loop-fix.exe').write_bytes(d);p=pefile.PE(data=d,fast_load=True);off=p.get_offset_from_rva(0xca85d1);old=bytes.fromhex('81fb80969800');assert d[off:off+6]==old;d[off:off+6]=bytes.fromhex('81fb01000000');(r/'MuMuNxDevice.cpu-loop-fix.exe').write_bytes(d);(r/'exe-cpu-loop-fix-manifest.json').write_text(json.dumps({'source_sha256':before,'patched_sha256':h(d)}));print('candidate',h(d))
